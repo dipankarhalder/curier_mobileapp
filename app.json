@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "Mahamaya Hotel & Restaurent",
-    "slug": "mahamaya",
+    "name": "Curier Application",
+    "slug": "curier",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "mahamaya",
+    "scheme": "curier",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.crzydipankar.mahamaya",
+      "bundleIdentifier": "com.crzydipankar.curier",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
@@ -21,7 +21,7 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.crzydipankar.mahamaya"
+      "package": "com.crzydipankar.curier"
     },
     "web": {
       "bundler": "metro",
@@ -46,7 +46,7 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "647a6742-4f93-45c6-aeab-3faaa96b6b2b"
+        "projectId": ""
       }
     },
     "owner": "crzydipankar"
