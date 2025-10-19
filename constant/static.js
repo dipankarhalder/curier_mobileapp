@@ -1,5 +1,7 @@
 import mainAppLogo from "../assets/images/mainlogo.png";
 import splashScreenBackground from "../assets/images/splashbg.png";
+import loginBackground from "../assets/images/loginbg.png";
+
 import comboPackBanner1 from "../assets/images/combo1.jpeg";
 import comboPackBanner2 from "../assets/images/combo2.jpg";
 import comboPackBanner3 from "../assets/images/combo3.jpg";
@@ -38,6 +40,8 @@ import { Home, User, Appoint } from "./icon";
 
 export const main_splash_screen_logo = mainAppLogo;
 export const splash_screen_background = splashScreenBackground;
+export const login_bg = loginBackground;
+
 export const mainBanner = banner1;
 export const footer_heart = heart;
 

@@ -16,7 +16,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 import { pathItem } from "../../constant/routes";
-import { splash_banner_image_data } from "../../constant/static";
+import { login_bg } from "../../constant/static";
 import { Phone } from "../../constant/icon";
 
 const schema = yup.object().shape({
@@ -60,15 +60,14 @@ export default function Login() {
   };
 
   return (
-    <View className="flex-1 bg-white">
+    <View className="flex-1 bg-black">
       <KeyboardAvoidingView
         className="flex-1"
         behavior={Platform.OS === "ios" ? "padding" : undefined}
       >
         <View className="flex-1 bg-black">
-          {/* Banner Section */}
           <ImageBackground
-            source={splash_banner_image_data.splash_image_6}
+            source={login_bg}
             resizeMode="cover"
             className="absolute top-0 left-0 right-0 h-[52%] flex items-start justify-center px-8"
           >
@@ -78,34 +77,22 @@ export default function Login() {
               end={{ x: 0.5, y: 1 }}
               style={{
                 position: "absolute",
-                bottom: 60,
+                bottom: 0,
                 left: 0,
                 right: 0,
-                height: 310,
+                height: 200,
                 zIndex: 1,
               }}
             />
-            <View className="relative z-[2]">
-              <Text className="text-white text-2xl mb-3 font-nunitosans-semibold">
+          </ImageBackground>
+          <View className="absolute bottom-0 left-0 right-0 px-8 pt-6 bg-white h-[54%] rounded-[10px] z-[3]">
+            <View className="flex-1 items-center justify-start bg-white">
+              <Text className="text-[#15253f] text-[16px] mt-2 font-nunitosans-bold w-full leading-tight">
                 Welcome back
               </Text>
-              <Text className="text-white text-4xl font-nunitosans-bold">
+              <Text className="text-[#ff8d08] w-full text-[24px] mt-1 mb-3 font-nunitosans-bold leading-tight">
                 Login to Continue
               </Text>
-            </View>
-          </ImageBackground>
-
-          {/* Form Container */}
-          <View className="absolute bottom-0 left-0 right-0 px-8 pt-6 bg-white h-[66%] rounded-[36px] z-[3]">
-            <View className="flex-1 items-center justify-start bg-white">
-              <Text className="text-gray-700 text-[18px] mt-2 mb-1 font-nunitosans-bold w-full leading-tight">
-                Let&#39;s get you signed in.
-              </Text>
-              <Text className="text-[#ff8d08] w-full text-[13px] mt-1 mb-3 font-nunitosans-medium leading-tight">
-                Please enter your phone no to continue.
-              </Text>
-
-              {/* Phone Field */}
               <Controller
                 control={control}
                 name="phone"
@@ -140,8 +127,6 @@ export default function Login() {
                   {errors.phone.message}
                 </Text>
               )}
-
-              {/* Submit Button */}
               <View className="absolute bottom-[110px] w-full px-[70px]">
                 <TouchableOpacity
                   onPress={handleSubmit(onSubmit)}
@@ -166,8 +151,6 @@ export default function Login() {
                   )}
                 </TouchableOpacity>
               </View>
-
-              {/* Sign Up Link */}
               <View className="absolute bottom-[54px] w-full flex-row justify-center">
                 <Text className="text-gray-500 text-md font-nunitosans-semibold">
                   Don&apos;t have an account?{" "}
