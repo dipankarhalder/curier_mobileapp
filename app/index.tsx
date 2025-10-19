@@ -19,15 +19,15 @@ const { height: screenHeight } = Dimensions.get("screen");
 
 export default function Index() {
   const router = useRouter();
+
   useEffect(() => {
     setTimeout(() => {
-      router.replace(pathItem.splash as any);
+      router.replace(pathItem.login as any);
     }, 3000);
   }, [router]);
 
   return (
     <View className="flex-1 bg-black">
-      {/* Onboarding slides */}
       <ScrollView
         pagingEnabled
         className="flex-1"
@@ -42,20 +42,16 @@ export default function Index() {
           className="flex-1 items-center justify-center"
         />
       </ScrollView>
-
-      {/* Logo */}
-      <View className="absolute top-[100px] w-full flex-row justify-center space-x-2">
+      <View className="absolute top-[60px] w-full flex-row justify-center space-x-2">
         <Image
           source={main_splash_screen_logo}
           style={{ width: 220, height: 220 }}
           resizeMode="contain"
         />
       </View>
-
-      {/* Bottom text */}
-      <View className="absolute bottom-[70px] w-full flex-row justify-center space-x-2">
-        <Text className="text-white text-xl font-nunitosans-semibold">
-          Please take a breath...
+      <View className="absolute bottom-[40px] w-full flex-row justify-center space-x-2">
+        <Text className="text-white text-2xl font-nunitosans-semibold">
+          Please bear with me...
         </Text>
       </View>
     </View>
