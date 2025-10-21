@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { useRouter, useLocalSearchParams } from "expo-router";
+import { useLocalSearchParams } from "expo-router";
 import {
   Text,
   View,
@@ -15,7 +15,6 @@ import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-import { pathItem } from "../../constant/routes";
 import { login_bg } from "../../constant/static";
 import { useAuthStore } from "../../store/auth";
 
@@ -34,7 +33,6 @@ type FormInputs = {
 };
 
 export default function Otp() {
-  const router = useRouter();
   const { phone } = useLocalSearchParams();
   const login = useAuthStore((state) => state.login);
 
@@ -85,7 +83,6 @@ export default function Otp() {
         return;
       }
       login();
-      router.replace(pathItem.home as any);
     } catch (error) {
       console.error("OTP Error", error);
     } finally {
@@ -210,6 +207,14 @@ export default function Otp() {
                 </TouchableOpacity>
               </View>
             </View>
+          </View>
+          <View className="absolute bottom-[60px] left-[5%] z-[4] w-[90%] bg-green-300 px-6 py-6 rounded-lg">
+            <Text className="text-green-800 font-nunitosans-bold text-[24px] text-center mb-2">
+              Successfully login
+            </Text>
+            <Text className="font-nunitosans-medium text-green-700 text-center">
+              After login under progress
+            </Text>
           </View>
         </View>
       </KeyboardAvoidingView>
