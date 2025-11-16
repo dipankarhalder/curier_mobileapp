@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "Curier Application",
-    "slug": "curier",
+    "name": "Courier Application",
+    "slug": "courier",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "curier",
+    "scheme": "courier",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.crzydipankar.curier",
+      "bundleIdentifier": "com.crzydipankar.courier",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
@@ -21,7 +21,7 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.crzydipankar.curier"
+      "package": "com.crzydipankar.courier"
     },
     "web": {
       "bundler": "metro",

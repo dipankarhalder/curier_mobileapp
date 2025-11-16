@@ -1,6 +1,11 @@
 import mainAppLogo from "../assets/images/mainlogo.png";
 import splashScreenBackground from "../assets/images/splashbg.png";
-import loginBackground from "../assets/images/loginbg.png";
+import loginBackground from "../assets/images/login.jpg";
+import regBackground from "../assets/images/reg.jpg";
+
+import sp1 from "../assets/images/sp1.png";
+import sp2 from "../assets/images/sp2.png";
+import sp3 from "../assets/images/sp3.png";
 
 import comboPackBanner1 from "../assets/images/combo1.jpeg";
 import comboPackBanner2 from "../assets/images/combo2.jpg";
@@ -39,8 +44,12 @@ import splashImage11 from "../assets/images/11.jpg";
 import { Home, User, Appoint } from "./icon";
 
 export const main_splash_screen_logo = mainAppLogo;
+export const sp_banner_1 = sp1;
+export const sp_banner_2 = sp2;
+export const sp_banner_3 = sp3;
 export const splash_screen_background = splashScreenBackground;
 export const login_bg = loginBackground;
+export const reg_bg = regBackground;
 
 export const mainBanner = banner1;
 export const footer_heart = heart;

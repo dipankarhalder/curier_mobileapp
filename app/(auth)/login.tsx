@@ -80,12 +80,12 @@ export default function Login() {
                 bottom: 0,
                 left: 0,
                 right: 0,
-                height: 200,
+                height: 100,
                 zIndex: 1,
               }}
             />
           </ImageBackground>
-          <View className="absolute bottom-0 left-0 right-0 px-8 pt-6 bg-white h-[54%] rounded-[10px] z-[3]">
+          <View className="absolute bottom-0 left-0 right-0 px-8 pt-6 bg-white h-[54%] rounded-[30px] z-[3]">
             <View className="flex-1 items-center justify-start bg-white">
               <Text className="text-[#15253f] text-[16px] mt-2 font-nunitosans-bold w-full leading-tight">
                 Welcome back
