@@ -15,7 +15,7 @@ import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 import { pathItem } from "../../constant/routes";
-import { login_bg } from "../../constant/static";
+import { reg_bg } from "../../constant/static";
 import { Eye, CloseEye, Phone, Email, User } from "../../constant/icon";
 
 type RegisterFormData = {
@@ -73,9 +73,9 @@ export default function Register() {
       >
         <View className="flex-1 bg-black">
           <ImageBackground
-            source={login_bg}
+            source={reg_bg}
             resizeMode="cover"
-            className="absolute top-0 left-0 right-0 h-[52%] flex items-start justify-center px-8"
+            className="absolute top-0 left-0 right-0 h-[56%] flex items-start justify-center px-8"
           >
             <LinearGradient
               colors={["transparent", "#000000"]}
@@ -86,12 +86,12 @@ export default function Register() {
                 bottom: 0,
                 left: 0,
                 right: 0,
-                height: 200,
+                height: 100,
                 zIndex: 1,
               }}
             />
           </ImageBackground>
-          <View className="absolute bottom-0 left-0 right-0 px-8 pt-6 bg-white h-[60%] rounded-[10px] z-[3]">
+          <View className="absolute bottom-0 left-0 right-0 px-8 pt-6 bg-white h-[60%] rounded-[30px] z-[3]">
             <View className="flex-1 items-center justify-start bg-white">
               <Text className="text-[#15253f] text-[16px] mt-2 font-nunitosans-bold w-full leading-tight">
                 Hey there!
