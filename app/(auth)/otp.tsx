@@ -121,12 +121,12 @@ export default function Otp() {
                 bottom: 60,
                 left: 0,
                 right: 0,
-                height: 310,
+                height: 50,
                 zIndex: 1,
               }}
             />
           </ImageBackground>
-          <View className="absolute bottom-0 left-0 right-0 px-8 pt-6 bg-white h-[60%] rounded-[10px] z-[3]">
+          <View className="absolute bottom-0 left-0 right-0 px-8 pt-6 bg-white h-[60%] rounded-[30px] z-[3]">
             <View className="flex-1 items-center justify-start bg-white">
               <Text className="text-[#15253f] text-[24px] mt-2 font-nunitosans-bold w-full leading-tight">
                 OTP Validation
